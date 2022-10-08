@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --prm-clr: #46549e;
+  --white: hsl(0, 0%, 93%);
+  --black: hsl(0, 0%, 20%);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+a {
+  color: var(--prm-clr);
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--white);
+  color: var(--black);
+  line-height: 1.8;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .imp {
+  color: var(--prm-clr);
+}
+
+.info .profession,
+.info .email {
+  color: var(--prm-clr);
+  font-size: 15px;
+}
