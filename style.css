@@ -39,6 +39,18 @@ header .container {
   justify-content: space-between;
   align-items: center;
 }
+
+.profile .links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+svg {
+  display: flex;
+  align-self: center;
+}
+
 .about .imp {
   color: var(--prm-clr);
 }
@@ -47,4 +59,45 @@ header .container {
 .info .email {
   color: var(--prm-clr);
   font-size: 15px;
+}
+
+.interest {
+  margin-top: 1.5rem;
+}
+
+.projects {
+  margin-top: 1rem;
+}
+
+.project__body {
+  padding-left: 1rem;
+}
+
+.project .techs {
+  list-style: none;
+  font-size: 13px;
+  color: var(--prm-clr);
+  display: flex;
+  gap: 0.5em;
+}
+
+.project .techs li::after {
+  content: "]";
+}
+
+.project .techs li::before {
+  content: "[";
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer .container {
+  padding-bottom: 0;
 }
