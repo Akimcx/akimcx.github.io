@@ -5,9 +5,17 @@
 }
 
 :root {
-  --bg-clr: hsl(240, 4%, 11%);
-  --accent-clr: hsla(12, 81%, 53%, 0.836);
-  --link-clr: hsla(12, 81%, 53%, 0.836);
+  --bg-clr: #1b1b1d;
+  --card-bg-clr: #26201d;
+  --accent-clr: #e84d26d5;
+  --white: #f5f5f5;
+}
+
+.dark {
+  --bg-clr: #f5f5f5;
+  --accent-clr: #e84d26;
+  --white: #1b1b1d;
+  --card-bg-clr: linear-gradient(to bottom right, #f5f5f5, hsl(12, 31%, 61%));
 }
 
 .container {
@@ -28,7 +36,7 @@ li {
 body {
   min-height: 100vh;
   background-color: var(--bg-clr);
-  color: whitesmoke;
+  color: var(--white);
   font-family: sans-serif;
 }
 
@@ -51,14 +59,13 @@ header {
 }
 
 section:first-of-type {
-  height: calc(100vh - 80px);
   display: flex;
   gap: 1rem;
   flex-direction: column;
 }
 
 section {
-  height: 100vh;
+  height: 100%;
 }
 
 section + section {
@@ -78,32 +85,55 @@ p {
   justify-content: space-between;
   gap: 1rem;
   flex-direction: column;
+  margin-top: 10rem;
 }
 
-button {
+a.btn {
   padding: 1.1rem 1rem;
   cursor: pointer;
   border-radius: 3px;
-  color: whitesmoke;
+  color: var(--white);
+  text-align: center;
+  display: block;
+  transition: ease-in 100ms transform;
 }
 
-button.primary {
-  background-color: var(--link-clr);
+a.btn:hover {
+  transform: scaleY(1.1);
+}
+
+a.primary {
+  background-color: var(--accent-clr);
   border: none;
 }
 
-button.secondary {
+a.secondary {
   background: none;
-  border: 1px solid var(--link-clr);
-  color: var(--link-clr);
+  border: 1px solid var(--accent-clr);
+  color: var(--accent-clr);
 }
 
-.projects_list a {
+.projects  h2{
+  margin-bottom: 1rem;
+}
+
+.project_card + .project_card {
+  margin-top: 1rem;
+}
+
+.project_card {
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background: var(--card-bg-clr);
+}
+
+.project_card a {
   color: var(--accent-clr);
   position: relative;
 }
 
-.projects_list a::after {
+.project_card a::after {
   content: "";
   width: 100%;
   height: 2px;
@@ -117,13 +147,30 @@ button.secondary {
   transition: transform 0.3s ease-in-out;
 }
 
-.projects_list a:hover::after {
+.project_card a:hover::after {
   transform-origin: left;
   transform: scaleX(1);
 }
 
-.projects_list .tags {
+.project_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.project_tags {
     display: flex;
     gap: 1rem;
-    font-size: .5em;
+    font-size: .8em;
+}
+
+footer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

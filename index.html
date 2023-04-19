@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Kassim A. Acacia</title>
+    <script defer src="app.js"></script>
+    <title>Akimcx (Kassim A. Acacia) | Network Engineer & Developer</title>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="logo">
-          <p>Kassim A. Acacia</p>
+          <p>Akimcx</p>
         </div>
+        <button id="switcher">Theme</button>
       </div>
     </header>
     <main>
@@ -22,7 +24,6 @@
         >
         <section id="welcome" class="welcome">
           <div class="entry">
-            <small>The Tech Pro who can do it all</small>
             <h1>Network Engineer by day &<br />Developer by Night</h1>
           </div>
           <p>
@@ -30,45 +31,175 @@
             with coding skills to create innovative solutions for complex IT
             challenges.
           </p>
-          <p>
-            During my free time, I love to experiment with new technologies and
-            build innovative software applications. My expertise in networking
-            helps me optimize performance and security, while my passion for
-            coding keeps me up-to-date with the latest trends in software
-            development.
-          </p>
+          <!-- <p>
+            In my free time, I enjoy experimenting with new technologies and
+            building innovative software. My expertise in networking allows me
+            to develop optimized solutions with a focus on connectivity and
+            reliability, while my passion for coding drives me to stay
+            up-to-date with the latest trends in software development."
+          </p> -->
           <div class="profile">
             <img
               src="./assets/avataaars.png"
               alt="Picture of Kassim A. Acacia"
             />
           </div>
+          <div class="socials">
+            <ul>
+              <li>github</li>
+              <li>linkedin</li>
+              <li>email</li>
+            </ul>
+          </div>
           <div class="ctas">
-            <button class="primary">
-              <a href="./assets/resume.pdf">My Resume</a>
-            </button>
-            <button class="secondary">Drop me a line</button>
+            <a class="btn primary" href="./assets/resume.pdf">My Resume</a>
+            <a class="btn secondary" href="#">Drop me a line</a>
           </div>
         </section>
-        <section id="project" class="projects">
+        <section id="projects" class="projects">
           <h2>My Projects</h2>
-          <ul class="projects_list">
-            <li>
-              <h3><a href="#">mather</a></h3>
-              <ul class="tags">
+          <div class="project_card">
+            <div class="project_header">
+              <h3 class="project_title">
+                <a class="project_link" href="#">mather</a>
+              </h3>
+              <ul class="project_tags">
                 <li>java</li>
                 <li>html</li>
                 <li>css</li>
               </ul>
-              <p>
-                A program that evaluates standard mathematical expressions using
-                a
-                <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser"
-                  >RDP</a
+            </div>
+            <p class="project_description">
+              A program that evaluates mathematical expressions using a
+              <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser"
+                >RDP</a
+              >
+              algorithm
+            </p>
+          </div>
+          <div class="project_card">
+            <div class="project_header">
+              <h3 class="project_title">
+                <a class="project_link" href="#">mather</a>
+              </h3>
+              <ul class="project_tags">
+                <li>java</li>
+                <li>html</li>
+                <li>css</li>
+              </ul>
+            </div>
+            <p class="project_description">
+              A program that evaluates mathematical expressions using a
+              <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser"
+                >RDP</a
+              >
+              algorithm
+            </p>
+          </div>
+          <div class="project_card">
+            <div class="project_header">
+              <h3 class="project_title">
+                <a class="project_link" href="github.com/akimcx/mather"
+                  >mather</a
                 >
-                algorithm
-              </p>
-            </li>
+              </h3>
+              <ul class="project_tags">
+                <li>java</li>
+                <li>html</li>
+                <li>css</li>
+              </ul>
+            </div>
+            <p class="project_description">
+              A program that evaluates mathematical expressions using a
+              <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser"
+                >RDP</a
+              >
+              algorithm
+            </p>
+          </div>
+          <div class="project_card">
+            <div class="project_header">
+              <h3 class="project_title">
+                <a class="project_link" href="#">mather</a>
+              </h3>
+              <ul class="project_tags">
+                <li>java</li>
+                <li>html</li>
+                <li>css</li>
+              </ul>
+            </div>
+            <p class="project_description">
+              A program that evaluates mathematical expressions using a
+              <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser"
+                >RDP</a
+              >
+              algorithm
+            </p>
+          </div>
+        </section>
+        <section id="about" class="about">
+          <h2>About me</h2>
+          <p>Network Engineer - Developer</p>
+          <p>
+            Kassim A. Acacia who goes by the name of Akimcx, is a talented
+            network engineer & developer. In his free time he enjoy
+            experimenting with new technologies & building innovative software.
+            His expertise in networking allows him to develop optimized
+            solutions with a focus on connectivity and reliability, while his
+            passion for coding drives him to stay up-to-date with the latest
+            trends in software development.
+          </p>
+          <p>
+            applications. He was born in Niamey, Niger, on February 2, 1994. He
+            is currently NaN years and NaN months old today. At a young age of
+            14 in 2009, Abass Dev became fascinated with the world of web
+            development. However, he had no idea where to start. It wasn't until
+            he met a friend on Skyrock, a social networking site, in 2011, that
+            he was introduced to the world of blogging and tasked with
+            administering a Wix-created blog. It was this experience that
+            sparked his curiosity and ignited his passion for web development.
+            In 2012, Abass Dev created his own blog on the Blogspot platform,
+            but soon discovered its limitations. Determined to expand his
+            knowledge and capabilities, he began to explore the depths of web
+            development using languages such as HTML, CSS, JavaScript, PHP, SQL,
+            and others. With his dedication and hard work, Abass Dev honed his
+            skills and became a self-taught full-stack developer. Today, he has
+            an impressive portfolio of work that showcases his expertise in
+            building dynamic, responsive, and visually appealing web
+            applications. In addition to his technical abilities, Abass Dev has
+            a keen eye for design and aesthetics, which allows him to create
+            stunning and functional user interfaces. He is always learning and
+            staying up-to-date with the latest trends and technologies in the
+            ever-evolving field of web development. Abass Dev is a true
+            testament to the power of self-education and perseverance. His
+            passion and commitment to his craft have led him to become a
+            respected figure in the web development community, and a source of
+            inspiration for aspiring developers around the world.
+          </p>
+          <p>
+            <h4>GPTv1</h4>
+            Hello, my name is [Name] and I am a network engineer and developer. My passion for technology started when I stumbled upon "Le blog du hacker," a website that introduced me to the world of programming and networking. It was like a 'déclic' moment for me, and I found myself diving deeper and deeper into this fascinating field.
+
+Eventually, I discovered "OpenClassroom," a MOOC website that covers a broad range of topics, including programming, networking, and more. Starting with the basics of HTML, CSS, and JavaScript, I quickly progressed to more advanced topics like PHP and eventually Java programming. Learning Java was the best decision of my life, as I still use it extensively to this day. Additionally, I received my first introduction to Linux and networking through OpenClassroom.
+
+After my time with OpenClassroom, I continued my education by studying networking at university. However, during my second year, the Covid-19 pandemic hit, which meant I had to adjust to learning online. Luckily, I had the opportunity to take the "CCNAv7 Introduction to Network" course at the Cisco Networking Academy and received a certificate. I also took courses on Linux and Python during this time.
+
+Once the lockdown was lifted, I returned to university and finished my studies. Now, I am eager to practice and further develop my skills by finding a job that allows me to apply my knowledge of technologies like Ansible, Docker, and more. I am passionate about the intersection of networking and programming, and I am excited to see where this journey takes me.
+          </p>
+          <a href="#" class="btn primary">Get In Touch</a>
+        </section>
+        <section id="tools" class="tools">
+          <h2>Technologies & Tools</h2>
+          <ul>
+            <li>java</li>
+            <li>kotlin</li>
+            <li>js</li>
+            <li>python</li>
+            <li>mysql</li>
+            <li>git</li>
+            <li>linux</li>
+            <li>docker</li>
+            <li>ansible</li>
           </ul>
         </section>
       </div>
