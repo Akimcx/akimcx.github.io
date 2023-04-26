@@ -5,16 +5,16 @@
 }
 
 :root {
-  --bg-clr: #1b1b1d;
-  --card-bg-clr: #26201d;
-  --accent-clr: #e84d26d5;
-  --white: #f5f5f5;
+  --bg-clr: hsl(240, 4%, 18%);
+  --card-bg-clr: hsl(20, 19%, 21%);
+  --accent-clr: hsla(12, 81%, 53%, 0.835);
+  --white: hsl(0, 0%, 96%);
 }
 
 .dark {
-  --bg-clr: #f5f5f5;
-  --accent-clr: #e84d26;
-  --white: #1b1b1d;
+  --bg-clr: hsl(0, 0%, 90%);
+  --accent-clr: hsl(12, 81%, 53%);
+  --white: hsl(240, 4%, 11%);
   --card-bg-clr: linear-gradient(to bottom right, #f5f5f5, hsl(12, 31%, 61%));
 }
 
@@ -47,6 +47,14 @@ header {
   height: 60px;
 }
 
+header .container {
+  display: flex;
+}
+
+header .switcher {
+  all: unset;
+}
+
 .headline {
   display: block;
   text-align: center;
@@ -54,18 +62,14 @@ header {
   height: 20px;
 }
 
-.profile {
+.profile img {
   display: none;
+  width: 100%;
 }
 
 .welcome_sub {
-  margin-top: .71rem;
+  margin-top: 0.71rem;
   opacity: 50%;
-}
-
-.socials ul {
-  display: none;
-  gap: 1rem;
 }
 
 section:first-of-type {
@@ -93,7 +97,7 @@ p {
   gap: 1rem;
   flex-direction: column;
 }
-
+button,
 a.btn {
   padding: 1.1rem 1rem;
   cursor: pointer;
@@ -102,12 +106,14 @@ a.btn {
   text-align: center;
   display: block;
   transition: ease-in 100ms transform;
+  width: 100%;
 }
 
 a.btn:hover {
   transform: scaleY(1.1);
 }
 
+button,
 a.primary {
   background-color: var(--accent-clr);
   border: none;
@@ -176,6 +182,53 @@ a.secondary {
   font-size: 0.8em;
 }
 
+.tools_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+label {
+  position: absolute;
+  left: 1rem;
+  background-color: var(--bg-clr);
+  padding: 0 0.31em;
+}
+
+form {
+  width: 100%;
+}
+
+.socials ul {
+  display: flex;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  border: none;
+  background-color: var(--bg-clr);
+  font-size: 1rem;
+  color: var(--white);
+  padding: 0.7rem 0.9rem;
+  margin: 0.5rem 0;
+  outline: 1px solid var(--accent-clr);
+  border-radius: 0.2em;
+}
+
+.poko_konnen {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
 footer {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -190,9 +243,16 @@ footer .container {
 @media screen and (min-width: 800px) {
   #welcome {
     display: grid;
-    grid-template-columns: 2fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
+
   .profile {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .profile img {
     display: block;
   }
 
@@ -202,10 +262,18 @@ footer .container {
   }
 
   .ctas {
-    grid-column: 1 / span 2;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+    width: 100%;
+    align-self: start;
+  }
+
+  .poko_konnen {
+    flex-direction: row;
   }
 
   .socials ul {
-    display: flex;
+    flex-direction: column;
   }
 }

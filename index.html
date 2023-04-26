@@ -15,7 +15,7 @@
         <div class="logo">
           <p>Akimcx</p>
         </div>
-        <button id="switcher">Theme</button>
+        <button id="switcher" class="switcher">d</button>
       </div>
     </header>
     <main>
@@ -40,13 +40,7 @@
               alt="Picture of Kassim A. Acacia"
             />
           </div>
-          <div class="socials">
-            <ul>
-              <li>github</li>
-              <li>linkedin</li>
-              <li>email</li>
-            </ul>
-          </div>
+
           <div class="ctas">
             <a class="btn primary" href="./assets/resume.pdf">My Resume</a>
             <a class="btn secondary" href="#contact">Drop me a line</a>
@@ -149,8 +143,7 @@
         </section>
         <section id="tools" class="tools">
           <h2>Technologies & Tools</h2>
-
-          <ul>
+          <ul class="tools_list">
             <li>java</li>
             <li>kotlin</li>
             <li>js</li>
@@ -164,19 +157,35 @@
         </section>
         <section id="contact" class="contact">
           <h2>Drop a line</h2>
-          <form action="">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" />
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
-            <label for="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </form>
+          <div class="poko_konnen">
+            <div class="socials">
+              <ul>
+                <li>Github</li>
+                <li>LinkedIn</li>
+                <li>IG</li>
+              </ul>
+            </div>
+            <form action="">
+              <div class="form_label">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" />
+              </div>
+              <div class="form_label">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="form_label">
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <button type="submit">Drop</button>
+            </form>
+          </div>
         </section>
       </div>
     </main>
