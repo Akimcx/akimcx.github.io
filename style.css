@@ -59,28 +59,24 @@ header {
 }
 
 .welcome_sub {
+  margin-top: .71rem;
   opacity: 50%;
 }
 
 .socials ul {
-  display: flex;
+  display: none;
   gap: 1rem;
 }
 
 section:first-of-type {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   flex-direction: column;
-  height: calc(100vh - 20px - 60px);
   justify-content: space-evenly;
 }
 
-section {
-  height: 100vh;
-}
-
 section + section {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 section h1 {
@@ -189,4 +185,27 @@ footer .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  #welcome {
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+  }
+  .profile {
+    display: block;
+  }
+
+  .welcome_title {
+    display: block;
+    grid-column: 1 / span 2;
+  }
+
+  .ctas {
+    grid-column: 1 / span 2;
+  }
+
+  .socials ul {
+    display: flex;
+  }
 }
