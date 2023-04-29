@@ -27,6 +27,10 @@
   margin: 0 auto;
 }
 
+.shape {
+  background-color: #202020;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -126,7 +130,7 @@ header .switcher {
   opacity: 50%;
 }
 
-section:first-of-type {
+section:first-of-type .container {
   display: flex;
   gap: 2em;
   flex-direction: column;
@@ -134,7 +138,7 @@ section:first-of-type {
 }
 
 section + section {
-  margin-top: 2em;
+  margin-top: 5em;
 }
 
 section h1 {
@@ -182,17 +186,19 @@ p {
 }
 
 .tools_list {
-  display: grid;
-  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 1em;
 }
 
 .tools_list li {
   color: var(--accent-clr);
-  display: inline-block;
   outline: 1px solid var(--accent-clr);
   border-radius: 1em;
   padding: 0.3em 1em;
+  text-align: center;
 }
 
 .form_label {
@@ -217,6 +223,12 @@ form {
   gap: 1em;
 }
 
+.socials li {
+  outline: 1px solid var(--accent-clr);
+  padding: 1em;
+  border-radius: 1em;
+}
+
 input,
 textarea {
   border: none;
@@ -233,6 +245,7 @@ textarea {
   display: flex;
   flex-direction: column;
   margin-top: 1.5em;
+  gap: 2em;
 }
 
 footer {
@@ -247,7 +260,7 @@ footer .container {
 }
 
 @media screen and (min-width: 800px) {
-  #welcome {
+  #welcome .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
