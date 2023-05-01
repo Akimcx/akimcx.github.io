@@ -29,6 +29,7 @@
 
 .shape {
   background-color: #202020;
+  padding: 5em 0;
 }
 
 a {
@@ -250,7 +251,6 @@ textarea {
 
 footer {
   margin-top: 1em;
-  margin-bottom: 1em;
 }
 
 footer .container {
